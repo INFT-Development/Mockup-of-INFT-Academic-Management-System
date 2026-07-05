@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Dashboard — Campus MIS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/webp" href="Logo_W7aw0pZqV.webp">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <div class="profile-avatar">RD</div>
+        <h2 class="profile-name">Dr. Rugved Deolekar</h2>
+        <p class="profile-details">
+          Associate Professor, INFT department<br>
+          Subjects: PCD, DS, Algorithms<br>
+          ID: INFT_RVD
+        </p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group-title">Core MIS</div>
+        <a href="#" class="sidebar-link active">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="9" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="5" rx="1"></rect>
+            <rect x="14" y="12" width="7" height="9" rx="1"></rect>
+            <rect x="3" y="16" width="7" height="5" rx="1"></rect>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span>Academics</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Attendance</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Grades Entry</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+        
+        <a href="index.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path>
+          </svg>
+          <span>Logout</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <nav class="top-nav">
+        <div class="top-nav-left">
+          <img src="Logo_W7aw0pZqV.webp" alt="VIT Logo" class="top-nav-logo">
+          <div class="search-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" placeholder="Search grades, files, events...">
+          </div>
+        </div>
+
+        <div class="top-nav-right">
+          <div class="notification-btn" title="Notifications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="notification-icon">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="notification-badge">3</span>
+          </div>
+          <div class="profile-dropdown-wrapper">
+            <button class="avatar-placeholder active-user" id="userMenuBtn" title="Dr. Rugved Deolekar (Current User)" aria-expanded="false">RD</button>
+            <div class="dropdown-menu" id="userDropdown">
+              <a href="#" class="dropdown-item">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+              </a>
+              <a href="index.html" class="dropdown-item">
+                <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path></svg>
+                <span>Sign out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="dashboard-content">
+        <header class="page-header">
+          <div class="page-title-stack">
+            <h1>Faculty dashboard</h1>
+            <p>Monitor student progress, track attendance registry, and upload academic grades.</p>
+          </div>
+          <div class="page-header-actions">
+            <button class="btn btn-secondary">Schedule lecture</button>
+            <button class="btn btn-primary">Upload grades</button>
+          </div>
+        </header>
+
+        <article class="promo-banner">
+          <div class="promo-left">
+            <div class="promo-icon-block">
+              <svg viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <div class="promo-text-stack">
+              <h3>Mid-Term assessment grades submission</h3>
+              <p>Please review and upload grades for PCD (Principles of Compiler Design) before July 12.</p>
+            </div>
+          </div>
+          <div class="promo-right">
+            <button class="btn btn-primary">Submit grades</button>
+          </div>
+        </article>
+
+        <div class="card-grid">
+          <div class="dashboard-card">
+            <div class="card-top">
+              <div class="card-icon-box">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <span class="status-badge info">INFT</span>
+            </div>
+            <h3 class="card-title">Active courses</h3>
+            <p class="card-subtitle">Assigned theory and practical batches</p>
+            <div class="card-value">3 Courses</div>
+            <p class="title-sub">Subjects: PCD, DS, Algorithms.</p>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-top">
+              <div class="card-icon-box">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <span class="status-badge success">On track</span>
+            </div>
+            <h3 class="card-title">Class attendance</h3>
+            <p class="card-subtitle">Average attendance across assigned divisions</p>
+            <div class="card-value">82.4%</div>
+            <p class="title-sub">Batch A: 85.1%, Batch B: 79.7% average attendance.</p>
+          </div>
+
+          <div class="dashboard-card featured">
+            <div class="card-top">
+              <div class="card-icon-box" style="background-color: var(--accent-gold-light); color: var(--accent-gold);">
+                <svg viewBox="0 0 24 24">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                </svg>
+              </div>
+              <span class="status-badge warning">Pending review</span>
+            </div>
+            <h3 class="card-title">Grade submission status</h3>
+            <p class="card-subtitle">PCD & Data Structures theory results</p>
+            <div class="card-value">2 / 3 Pending</div>
+            <p class="title-sub">Algorithms grade sheets fully finalized and locked.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

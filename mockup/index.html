@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Campus MIS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/webp" href="Logo_W7aw0pZqV.webp">
+</head>
+<body>
+
+  <main class="login-container">
+    <header class="header-section">
+      <div class="logo-container" aria-label="Vidyalankar Institute of Technology Logo">
+        <img src="VIT-logo-blue.png" alt="Vidyalankar Institute of Technology" class="vit-logo-png">
+      </div>
+      <h1 class="title-main">Campus MIS</h1>
+      <p class="title-sub">Sign in to manage your academic ecosystem</p>
+    </header>
+
+    <div id="alertBanner" class="alert-banner" role="alert">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <span id="alertMessage">Incorrect email or password.</span>
+    </div>
+
+    <div class="role-selector" role="tablist" aria-label="User role">
+      <button class="role-btn active" role="tab" aria-selected="true" data-role="student">Student</button>
+      <button class="role-btn" role="tab" aria-selected="false" data-role="faculty">Faculty</button>
+      <button class="role-btn" role="tab" aria-selected="false" data-role="admin">Admin</button>
+    </div>
+
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="emailInput" class="form-label" id="emailLabel">Student ID or email</label>
+        <div class="input-wrapper">
+          <input type="email" id="emailInput" class="input-field" placeholder="e.g. 24102A0001 or name@vit.edu.in" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="passwordInput" class="form-label">Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="passwordInput" class="input-field" placeholder="Enter your password" required>
+          <button type="button" id="passwordToggle" class="password-toggle" aria-label="Show password">
+            <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="options-row">
+        <label class="remember-me">
+          <input type="checkbox" id="rememberMe">
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="submitBtn">Sign in</button>
+    </form>
+    <footer class="footer-text">
+      Need technical assistance? Contact <a href="#" class="footer-link">VIT Helpdesk</a> or read the <a href="#" class="footer-link">user guide</a>.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

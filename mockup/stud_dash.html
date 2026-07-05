@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard — Campus MIS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/webp" href="Logo_W7aw0pZqV.webp">
+</head>
+<body>
+
+  <div class="dashboard-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-profile">
+        <div class="profile-avatar">G</div>
+        <h2 class="profile-name">Gaurav</h2>
+        <p class="profile-details">
+          INFT Department, 3rd year<br>
+          Batch: 2024 - 2028<br>
+          ID: 24101A0061
+        </p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group-title">Core MIS</div>
+        <a href="#" class="sidebar-link active">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="3" width="7" height="9" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="5" rx="1"></rect>
+            <rect x="14" y="12" width="7" height="9" rx="1"></rect>
+            <rect x="3" y="16" width="7" height="5" rx="1"></rect>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span>Academics</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Attendance</span>
+        </a>
+        <a href="#" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+            <line x1="12" y1="4" x2="12" y2="20"></line>
+          </svg>
+          <span>Fees Portal</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+        
+        <a href="index.html" class="sidebar-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path>
+          </svg>
+          <span>Logout</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <nav class="top-nav">
+        <div class="top-nav-left">
+          <img src="Logo_W7aw0pZqV.webp" alt="VIT Logo" class="top-nav-logo">
+          <div class="search-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" placeholder="Search grades, files, events...">
+          </div>
+        </div>
+
+        <div class="top-nav-right">
+          <div class="notification-btn" title="Notifications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="notification-icon">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="notification-badge">5</span>
+          </div>
+          <div class="profile-dropdown-wrapper">
+            <button class="avatar-placeholder active-user" id="userMenuBtn" title="Gaurav (Current User)" aria-expanded="false">G</button>
+            <div class="dropdown-menu" id="userDropdown">
+              <a href="#" class="dropdown-item">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+              </a>
+              <a href="index.html" class="dropdown-item">
+                <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"></path></svg>
+                <span>Sign out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="dashboard-content">
+        <header class="page-header">
+          <div class="page-title-stack">
+            <h1>Academic dashboard</h1>
+            <p>Manage your courses, view attendance, track fees and academic results.</p>
+          </div>
+          <div class="page-header-actions">
+            <button class="btn btn-secondary">Download report</button>
+            <button class="btn btn-primary">Register for exams</button>
+          </div>
+        </header>
+
+        <article class="promo-banner">
+          <div class="promo-left">
+            <div class="promo-icon-block">
+              <svg viewBox="0 0 24 24">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <div class="promo-text-stack">
+              <h3>Semester V course registration is open</h3>
+              <p>Please review your elective courses and submit before the July 20 deadline.</p>
+            </div>
+          </div>
+          <div class="promo-right">
+            <button class="btn btn-primary">Register now</button>
+          </div>
+        </article>
+
+        <div class="card-grid">
+          <div class="dashboard-card">
+            <div class="card-top">
+              <div class="card-icon-box">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <span class="status-badge success">Present</span>
+            </div>
+            <h3 class="card-title">Attendance</h3>
+            <p class="card-subtitle">Calculated across 5 core INFT theory courses</p>
+            <div class="card-value">92.5%</div>
+            <p class="title-sub">Status: Satisfies university 75% attendance criteria.</p>
+          </div>
+
+          <div class="dashboard-card featured">
+            <div class="card-top">
+              <div class="card-icon-box" style="background-color: var(--accent-gold-light); color: var(--accent-gold);">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                  <line x1="12" y1="4" x2="12" y2="20"></line>
+                </svg>
+              </div>
+              <span class="status-badge warning">Due soon</span>
+            </div>
+            <h3 class="card-title">Term fees</h3>
+            <p class="card-subtitle">Academic year 2026 - 2027 installment</p>
+            <div class="card-value">₹93,500</div>
+            <p class="title-sub">Due date: July 15, 2026. Avoid overdue charges.</p>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="card-top">
+              <div class="card-icon-box">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <span class="status-badge success">Excellent</span>
+            </div>
+            <h3 class="card-title">Academic performance</h3>
+            <p class="card-subtitle">Calculated cumulative grade point average</p>
+            <div class="card-value">9.6 CGPA</div>
+            <p class="title-sub">Semester IV SGPA: 9.83. No active backlogs.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
